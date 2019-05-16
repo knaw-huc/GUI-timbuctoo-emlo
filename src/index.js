@@ -3,23 +3,54 @@ import ReactDOM from 'react-dom';
 import {StyleGuide, DescribedMock, Embed} from './component-view';
 
 import { HcHeaderTimbuctoo } from './tim-emlo-faceted-search';
+import { HcLayoutFacetResults } from './layouts';
+import { HcFacetBasic } from './facets';
+import { HcResultListHeader, HcResultList } from './results';
 
 
 ReactDOM.render(
+<div>
     <StyleGuide>
       <DescribedMock title="Faceted Search">
-        Components for data entry, forms and uploads.
+        Timbuctoo and Emlo faceted search page components
 
 
 
-          <Embed caption="Basic input" description="">
+          <Embed caption="Timbuctoo Header" description="">
             <HcHeaderTimbuctoo/>
+          </Embed>
+
+          <Embed caption="Two column responsive faceted search" description="">
+            <HcLayoutFacetResults
+              pageName="Place search"
+            />
+          </Embed>
+
+          <Embed caption="Basic facet" description="">
+            <HcFacetBasic
+              facetName="Datasets"
+            />
+          </Embed>
+
+          <Embed caption="Result list Header" description="">
+            <HcResultListHeader
+              totalResults="2332"
+            />
+          </Embed>
+
+          <Embed caption="Result list" description="">
+            <HcResultList/>
           </Embed>
 
 
 
       </DescribedMock>
 
-    </StyleGuide>,
+    </StyleGuide>
+      <p>Full page</p>
+      <HcHeaderTimbuctoo/>
+      <HcLayoutFacetResults pageName="Place search"/>
+    </div>
+    ,
   document.getElementById('container')
 );

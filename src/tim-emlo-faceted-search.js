@@ -1,5 +1,5 @@
 import React from 'react';
-const Fragment = React.Fragment;
+//const Fragment = React.Fragment;
 
 
   export class HcHeaderTimbuctoo extends React.Component {
@@ -7,13 +7,18 @@ const Fragment = React.Fragment;
       return (
         <React.Fragment>
         <div className="hcContentContainer bgColorBrand1 hcMarginBottom1">
-          <header className=" hcPageHeaderSimple hcBasicSideMargin">
+          <header className="hcPageHeaderSimple hcBasicSideMargin">
+            {/* eslint-disable-next-line */}
             <a href="#" className="hcBrand">
-              <div className="hcBrandLogo"><img src="images/{{logo}}" className="logo" alt=""/></div>
+              <div className="hcBrandLogo">
+                <img src="https://d33wubrfki0l68.cloudfront.net/f268c733451856e103a2959ba15ffdaec6334ea4/d34d8/images/emlo-logo.png" class="logo" alt="EM Places"/>  
+              </div>
             </a>
 
             <nav>
+              {/* eslint-disable-next-line */}
               <a href="#">All datasets</a>
+              {/* eslint-disable-next-line */}
               <a href="#">About</a>
             </nav>
           </header>
@@ -23,18 +28,14 @@ const Fragment = React.Fragment;
             <span>
               <span className="hcSmallTxt hcTxtColorGreyMid">Dataset</span>
               <select  >
-                //
-                  <option value="">//</option>
-                //
+                  <option >**List all datasets**</option>
               </select>
 
             </span>
             <span>
               <span className="hcSmallTxt hcTxtColorGreyMid"> Collections</span>
               <select  >
-                //
-                  <option value="">//</option>
-                //
+                  <option >**List all Properties of selected datasets**</option>
               </select>
             </span>
 
