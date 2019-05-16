@@ -51,3 +51,16 @@ import React from 'react';
       );
     }
   }
+
+  export class HcFacetTextSearch extends React.Component {
+    render() {
+      return (
+        <div class="hcFacet">
+          <div class="hcFacetTitle">{this.props.facetName}</div>
+          <div class="hcFacetSearch">
+            <input type="text"/> <button type="button" name="button">Search</button>
+          </div>
+        </div>
+      );
+    }
+  }

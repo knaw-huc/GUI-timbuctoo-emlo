@@ -69,3 +69,28 @@ import { HcResultItemEmPlaces } from './timbuctoo-emlo';
       );
     }
   }
+
+  export class HcResultListPaging extends React.Component {
+    render() {
+      return (
+        <div class="hcPagination">
+        {/* eslint-disable-next-line */}
+          <div><a href="#">← Previous</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">1</a></div>
+          {/* eslint-disable-next-line */}
+          <div class="bgColorBrand2"><a href="#">2</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">3</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">4</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">5</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">6</a></div>
+          {/* eslint-disable-next-line */}
+          <div><a href="#">Next →</a></div>
+        </div>
+      );
+    }
+  }

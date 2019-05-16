@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {StyleGuide, DescribedMock, Embed} from './component-view';
 
-import { HcHeaderTimbuctoo } from './tim-emlo-faceted-search';
+import { HcHeaderTimbuctoo, HcFooterTimbuctoo } from './tim-emlo-faceted-search';
 import { HcLayoutFacetResults } from './layouts';
 import { HcFacetBasic } from './facets';
 import { HcResultListHeader, HcResultList } from './results';
@@ -50,6 +50,7 @@ ReactDOM.render(
       <p>Full page</p>
       <HcHeaderTimbuctoo/>
       <HcLayoutFacetResults pageName="Place search"/>
+      <HcFooterTimbuctoo/>
     </div>
     ,
   document.getElementById('container')

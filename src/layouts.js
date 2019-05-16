@@ -1,6 +1,6 @@
 import React from 'react';
-import { HcFacetBasic } from './facets';
-import { HcResultListHeader, HcResultList, HcResultSelectedFacets,HcResultListLegend } from './results';
+import { HcFacetBasic, HcFacetTextSearch } from './facets';
+import { HcResultListHeader, HcResultList, HcResultSelectedFacets,HcResultListLegend,HcResultListPaging } from './results';
 
   export class HcLayoutFacetResults extends React.Component {
     render() {
@@ -19,6 +19,9 @@ import { HcResultListHeader, HcResultList, HcResultSelectedFacets,HcResultListLe
               </button>
 
               <div className="hcLayoutFacetsToggel" id="hcLayoutFacetsToggel">
+                <HcFacetTextSearch
+                  facetName="Text search"
+                />
                 <HcFacetBasic
                   facetName="Dataset"
                 />
@@ -35,6 +38,7 @@ import { HcResultListHeader, HcResultList, HcResultSelectedFacets,HcResultListLe
               <HcResultSelectedFacets/>
               <HcResultListLegend/>
               <HcResultList/>
+              <HcResultListPaging/>
 
 
             </div>
