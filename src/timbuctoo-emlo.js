@@ -6,10 +6,21 @@ import React from 'react';
       return (
         <React.Fragment>
           <div class="hcListBasicResult">
-            <div class="hcListItemLong"><strong>Jan Willem Giltay</strong></div>
-            <div>1851<br/>Dordrecht</div>
-            <div>1929<br/></div>
+            <div class="hcListItemLong"><strong>{this.props.resultItemName}</strong><br/>{this.props.resultItemAdministration}</div>
+            <div>{this.props.resultItemType}</div>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+            {/* { this.props.resultItemAltNames} */}
+
+            {this.props.resultItemAltNames.map(apartment => (
+              <span>{this.props.resultItemAltNames.altName}</span>
+              ))}
+
           </div>
+          </div>
+
         </React.Fragment>
       );
     }

@@ -59,7 +59,15 @@ import React from 'react';
 
             </div>
             <div className="hcBasicSideMargin">
-              <img src="https://d33wubrfki0l68.cloudfront.net/e9bf56438b50ed9f97250de6d7c33b3bb8879741/c0f8e/images/logo-tim-hi-huc.png" alt="Timbuctoo Logo's" class="hcMarginTop2" />
+              <img
+                style={{
+          				fontSize: '1em',
+                  width: '300px',
+                  height: 'auto',
+          			}}
+                src="https://d33wubrfki0l68.cloudfront.net/e9bf56438b50ed9f97250de6d7c33b3bb8879741/c0f8e/images/logo-tim-hi-huc.png"
+                alt="Timbuctoo Logo's"
+                class="hcMarginTop2" />
             </div>
           </div>
         </div>

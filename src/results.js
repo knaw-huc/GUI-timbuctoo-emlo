@@ -21,11 +21,12 @@ import { HcResultItemEmPlaces } from './timbuctoo-emlo';
     render() {
       return (
         <div className="hcList hcMarginBottom2">
-          <HcResultItemEmPlaces/>
-          <HcResultItemEmPlaces/>
-          <HcResultItemEmPlaces/>
-          <HcResultItemEmPlaces/>
-          <HcResultItemEmPlaces/>
+          <HcResultItemEmPlaces
+              resultItemName="Opole"
+              resultItemAdministration="Poland, Opole Voivodeship"
+              resultItemType="Inhabited place"
+              resultItemAltNames={["altName":"Opolė", "altName":"Òpòle", "altName":"Opolí", "altName":"Oppein", "altName":"Oppeln"]}
+            />
         </div>
       );
     }
@@ -61,9 +62,9 @@ import { HcResultItemEmPlaces } from './timbuctoo-emlo';
       return (
         <div className="hcList">
           <div className="hcListHeader">
-            <div className="hcLabel hcListItemLong">Name </div>
-            <div className="hcLabel">Birth</div>
-            <div className="hcLabel">Death</div>
+            <div className="hcLabel hcListItemLong">Place </div>
+            <div className="hcLabel">Place type</div>
+            <div className="hcLabel">Alternative names</div>
           </div>
         </div>
       );

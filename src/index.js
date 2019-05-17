@@ -5,7 +5,7 @@ import {StyleGuide, DescribedMock, Embed} from './component-view';
 import { HcHeaderTimbuctoo, HcFooterTimbuctoo } from './tim-emlo-faceted-search';
 import { HcLayoutFacetResults } from './layouts';
 import { HcFacetBasic } from './facets';
-import { HcResultListHeader, HcResultList } from './results';
+import { HcResultListHeader, HcResultList, HcResultListPaging } from './results';
 
 
 ReactDOM.render(
@@ -40,6 +40,10 @@ ReactDOM.render(
 
           <Embed caption="Result list" description="">
             <HcResultList/>
+          </Embed>
+
+          <Embed caption="Paging" description="">
+            <HcResultListPaging/>
           </Embed>
 
 
