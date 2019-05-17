@@ -1,6 +1,6 @@
 import React from 'react';
 import { HcResultItemEmPlaces } from './timbuctoo-emlo';
-
+import searchResults from './emlo-search-results.json';
 
   export class HcResultListHeader extends React.Component {
     render() {
@@ -17,6 +17,7 @@ import { HcResultItemEmPlaces } from './timbuctoo-emlo';
     }
   }
 
+
   export class HcResultList extends React.Component {
     render() {
       return (
@@ -25,12 +26,35 @@ import { HcResultItemEmPlaces } from './timbuctoo-emlo';
               resultItemName="Opole"
               resultItemAdministration="Poland, Opole Voivodeship"
               resultItemType="Inhabited place"
-              resultItemAltNames={["altName":"Opolė", "altName":"Òpòle", "altName":"Opolí", "altName":"Oppein", "altName":"Oppeln"]}
+              resultItemAltNames={[{"altName":"Opolė"}, {"altName":"Òpòle"}, {"altName":"Opolí"}, {"altName":"Oppein"}, {"altName":"Oppeln"}]}
             />
         </div>
       );
     }
   }
+
+  // export class HcResultList extends React.Component {
+  //    render() {
+  //      return (
+  // const HcResultList = ({searchResults}) => (
+  //   <div className="hcList hcMarginBottom2">
+  //     {searchResults.map(searchResult => (
+  //       <HcResultItemEmPlaces
+  //         resultItemName={searchResult.resultItemName}
+  //         resultItemAdministration={searchResult.resultItemAdministration}
+  //         resultItemType={searchResult.resultItemType}
+  //         resultItemAltNames={searchResult.resultItemAltNames}
+  //       />
+  //     ))}
+  //   </div>
+  // );
+  //    }
+  //  }
+  // //export class HcResultList;
+
+
+
+
 
   export class HcResultSelectedFacets extends React.Component {
     render() {

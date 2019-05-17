@@ -1,0 +1,38 @@
+[
+  {
+    "resultItemName": "Opole",
+    "resultItemAdministration": "Poland, Opole Voivodeship",
+    "resultItemType": "Inhabited place",
+    "resultItemAltNames": [
+      {"altName":"Opolė"},
+      {"altName":"Òpòle"},
+      {"altName":"Opolí"},
+      {"altName":"Oppein"},
+      {"altName":"Oppeln"}
+    ]
+  },
+  {
+    "resultItemName": "Arnhem",
+    "resultItemAdministration": "Netherlands, Gelderland, Gemeente Arnhem",
+    "resultItemType": "Inhabited place",
+    "resultItemAltNames": [
+      {"altName":"Arecanum"},
+      {"altName":"Arnem"},
+      {"altName":"Arném"},
+      {"altName":"Arnema"},
+      {"altName":"Arnheim"}
+    ]
+  },
+  {
+    "resultItemName": "Amsterdam",
+    "resultItemAdministration": "Netherlands ,North Holland, Gemeente Amsterdam",
+    "resultItemType": "Inhabited place",
+    "resultItemAltNames": [
+      {"altName":"Amesterdão"},
+      {"altName":"Amstèdam"},
+      {"altName":"Amstelodamum"},
+      {"altName":"Amszterdam"},
+      {"altName":"Mokum"}
+    ]
+  }
+]
