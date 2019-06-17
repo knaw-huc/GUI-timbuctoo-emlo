@@ -15,7 +15,7 @@ import React from 'react';
                 Please note that the content is organised by archive folder. This may affect your results. Learn more about the structure of the archive.
               </div>
 
-              <div className="hcFacetFilter"><input type="text" name="" value="" placeholder="Type to filter"/></div>
+
               <div className="hcFacetItems">
               <HcFacetItem
                 facetItemName="KNAW-Lid"
@@ -41,6 +41,7 @@ import React from 'react';
       );
     }
   }
+  //<div className="hcFacetFilter"><input type="text" name="" value="" placeholder="Type to filter"/></div>
 
   export class HcFacetItem extends React.Component {
     render() {
